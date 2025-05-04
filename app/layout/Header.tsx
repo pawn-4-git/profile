@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
         <header className="text-white py-4">
-            <a href="/"><div className="myprofile mb-2 tracking-[-.01em]">My Profile</div></a>
+            <a href="/profile"><div className="myprofile mb-2 tracking-[-.01em]">My Profile</div></a>
             <nav className="container mx-auto flex justify-center space-x-8">
                 {menuItems.map((item, index) => (
                     <Link

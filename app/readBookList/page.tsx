@@ -3,25 +3,12 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import { books as readBooks, Book } from "../book/readBook";
 import { unreadBooks } from "../book/unReadBook";
-import { useSearchParams } from "next/navigation";
 
 export default function Page() {
-  const searchParams = useSearchParams();
-  const status = searchParams.get("status");
 
   let displayBooks: Book[] = [];
-  let heading = "全ての本";
-
-  if (status === "read") {
-    displayBooks = readBooks;
-    heading = "既読本一覧";
-  } else if (status === "unread") {
-    displayBooks = unreadBooks;
-    heading = "積読本一覧";
-  } else {
-    displayBooks = [...readBooks, ...unreadBooks];
-  }
-
+  let heading = "既読本一覧";
+  displayBooks = readBooks;
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-start justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <Header />

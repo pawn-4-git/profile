@@ -14,11 +14,11 @@ export default function Page() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start w-full max-w-full">
         <div className="flex flex-col gap-8 w-full max-w-full justify-center sm:justify-start">
           <div>
-            <a href="/readBookList"><h2 className="text-lg font-semibold mb-4 text-center sm:text-left">既読本</h2></a>
+            <a href="/profile/readBookList"><h2 className="text-lg font-semibold mb-4 text-center sm:text-left">既読本</h2></a>
             <BookList />
           </div>
           <div>
-            <a href="/unReadBookList"><h2 className="text-lg font-semibold mb-4 text-center sm:text-left">未読本</h2></a>
+            <a href="/profile/unReadBookList"><h2 className="text-lg font-semibold mb-4 text-center sm:text-left">未読本</h2></a>
             <UnreadBookList />
           </div>
         </div>

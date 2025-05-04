@@ -7,7 +7,7 @@ import { unreadBooks } from "../book/unReadBook";
 export default function Page() {
 
   let displayBooks: Book[] = [];
-  let heading = "積読本一覧";
+  const heading = "積読本一覧";
   displayBooks = unreadBooks;
 
   return (

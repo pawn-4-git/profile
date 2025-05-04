@@ -30,8 +30,8 @@ export default function Footer() {
                     height={16}
                 />
             </a>
-            <a href="https://speakerdeck.com/pawn_4_s"><Image src="/mark-f4be6df1e05965cac9f98e664a6c35f5ffdd0207385d07464a9214d6cdf76082.svg" width={40} height={40} alt="eight" className="header-global_header_nav__logo"></Image></a>
-            <a href="https://8card.net/virtual_cards/nGIwjbi0pBaYpg6Hkxowdw_39887963703"><Image src="/7f1b4567b780f555.svg" width={40} height={40} alt="eight" className="header-global_header_nav__logo"></Image></a>
+            <a href="https://speakerdeck.com/pawn_4_s"><Image src="/profile/mark-f4be6df1e05965cac9f98e664a6c35f5ffdd0207385d07464a9214d6cdf76082.svg" width={40} height={40} alt="eight" className="header-global_header_nav__logo"></Image></a>
+            <a href="https://8card.net/virtual_cards/nGIwjbi0pBaYpg6Hkxowdw_39887963703"><Image src="/profile/7f1b4567b780f555.svg" width={40} height={40} alt="eight" className="header-global_header_nav__logo"></Image></a>
         </footer>
     );
 }

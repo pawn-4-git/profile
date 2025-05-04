@@ -43,13 +43,13 @@ export default function Header() {
                 </a>
                 <a href="https://qiita.com/ho-rai">
                     <Image
-                        src="/qiita-icon.png"
+                        src="/profile/qiita-icon.png"
                         alt="Qiita"
                         width={28}
                         height={28}
                     />
                 </a>
-                <a href="https://speakerdeck.com/pawn_4_s"><Image src="/mark-f4be6df1e05965cac9f98e664a6c35f5ffdd0207385d07464a9214d6cdf76082.svg" width={40} height={40} alt="eight" className="header-global_header_nav__logo"></Image></a>
+                <a href="https://speakerdeck.com/pawn_4_s"><Image src="/profile/mark-f4be6df1e05965cac9f98e664a6c35f5ffdd0207385d07464a9214d6cdf76082.svg" width={40} height={40} alt="eight" className="header-global_header_nav__logo"></Image></a>
             </nav>
         </header>
     );

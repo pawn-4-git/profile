@@ -24,7 +24,7 @@ export default function Footer() {
             </a>
             <a href="https://qiita.com/ho-rai">
                 <Image
-                    src="/qiita-icon.png"
+                    src="/profile/qiita-icon.png"
                     alt="Qiita"
                     width={16}
                     height={16}

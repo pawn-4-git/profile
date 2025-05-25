@@ -7,6 +7,7 @@ export type Book = {
 };
 
 export const books: Book[] = [
+
     {
         title: "紛争でしたら八田まで（１）",
         author: "田素弘",

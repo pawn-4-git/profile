@@ -6,6 +6,7 @@ export type PresentationEvent = {
 };
 
 export const presentationEvents: PresentationEvent[] = [
+    { id: 20250530, title: '【エンジニア交流会＠目黒】テテミート #13《参加者全員LT会》', date: '2025-05-30', url: "https://tetemarche.connpass.com/event/348139/" },
     { id: 1, title: 'アニメから得た学びを発表会', date: '2025-04-18', url: "https://engineers-anime.connpass.com/event/340300/" },
     { id: 2, title: '読書シェア会 vol.3', date: '2025-03-26', url: "https://yumemi.connpass.com/event/346319/" },
     { id: 3, title: 'JBUG東京#25 ビギナー向け「Backlog導入・定着をスムーズに！成功企業のノウハウを大公開」', date: '2025-02-26', url: "https://jbug.connpass.com/event/343090/" },

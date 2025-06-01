@@ -9,6 +9,14 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: 20250529,
+        title: "【実体験】GitHubの隠れた挙動：プルリクエストのマージで他のプルリクエストも「マージ済み」に！",
+        date: "2025-05-29",
+        summary: "",
+        thumbnail: "/profile/img/20250529_blog.jpeg",
+        url: "https://qiita.com/ho-rai/items/c104033ef18a42a0c3ec"
+    },
+    {
         id: 1,
         title: "Clineの日本語設定どこで設定している？ プロンプト？ Custom Instructions? Advanced Settings?",
         date: "2025-04-27",

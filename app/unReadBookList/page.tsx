@@ -17,7 +17,7 @@ export default function Page() {
         <div className="flex flex-col gap-8 w-full max-w-full justify-center sm:justify-start">
           <div>
             <h2 className="text-lg font-semibold mb-4 text-center sm:text-left">{heading}</h2>
-            <div style={{ display: "flex", gap: "1.5rem", flexDirection: "row", overflowX: "auto" }}>
+            <div style={{ display: "flex", gap: "1.5rem", flexDirection: "column" }}>
               {displayBooks.map((book: Book, idx: number) => (
                 <a
                   key={idx}
@@ -30,19 +30,20 @@ export default function Page() {
                     padding: "1rem",
                     background: "#fafafa",
                     display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    minHeight: "320px",
-                    width: "33.33%",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    minHeight: "180px",
+                    minWidth: "300px",
                     textDecoration: "none",
-                    color: "inherit"
+                    color: "inherit",
+                    width: "100%"
                   }}
                 >
                   {book.imageUrl ? (
                     <img
                       src={book.imageUrl}
                       alt={book.title}
-                      style={{ width: "120px", height: "180px", objectFit: "cover", marginBottom: "1rem", borderRadius: "4px" }}
+                      style={{ width: "120px", height: "180px", objectFit: "cover", marginRight: "1rem", borderRadius: "4px" }}
                     />
                   ) : (
                     <div
@@ -54,7 +55,7 @@ export default function Page() {
                         alignItems: "center",
                         justifyContent: "center",
                         color: "#888",
-                        marginBottom: "1rem",
+                        marginRight: "1rem",
                         borderRadius: "4px"
                       }}
                     >
@@ -62,20 +63,26 @@ export default function Page() {
                     </div>
                   )}
                   <div style={{
-                    fontWeight: "bold",
-                    fontSize: "1.1rem",
-                    marginBottom: "0.5rem",
-                    textAlign: "center",
-                    maxWidth: "120px",
-                    wordWrap: "break-word",
-                    overflowWrap: "break-word",
-                    wordBreak: "break-word",
-                    whiteSpace: "normal",
-                    color: "black"
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    flexGrow: 1
                   }}>
-                    {book.title}
+                    <div style={{
+                      fontWeight: "bold",
+                      fontSize: "1.1rem",
+                      marginBottom: "0.5rem",
+                      textAlign: "left",
+                      wordWrap: "break-word",
+                      overflowWrap: "break-word",
+                      wordBreak: "break-word",
+                      whiteSpace: "normal",
+                      color: "black"
+                    }}>
+                      {book.title}
+                    </div>
+                    <div style={{ color: "#555", fontSize: "0.95rem", textAlign: "left" }}>{book.author}</div>
                   </div>
-                  <div style={{ color: "#555", fontSize: "0.95rem", textAlign: "center" }}>{book.author}</div>
                 </a>
               ))}
             </div>

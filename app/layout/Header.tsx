@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
         <header className="text-white py-4">
-            <a href="/profile"><div className="myprofile mb-2 tracking-[-.01em]">My Profile</div></a>
+            <a href="/profile"><div className="myprofile mb-2 tracking-[-.01em]" style={{ color: 'var(--foreground)' }}>My Profile</div></a>
             <nav className="container mx-auto flex justify-center space-x-8">
                 {menuItems.map((item, index) => (
                     <Link
@@ -25,7 +25,7 @@ export default function Header() {
                             onMouseEnter={() => setHoverIndex(index)}
                             onMouseLeave={() => setHoverIndex(null)}
                             className="relative text-lg font-semibold cursor-pointer transition-all duration-300"
-                            style={{ width: item.width, display: "inline-block", textAlign: "center" }}
+                            style={{ width: item.width, display: "inline-block", textAlign: "center", color: 'var(--foreground)' }}
                         >
                             {/* 幅を固定するために見えないテキストを配置 */}
                             <span className="invisible absolute">{item.hover}</span>
@@ -33,7 +33,7 @@ export default function Header() {
                         </span>
                     </Link>
                 ))}
-                <a href="https://x.com/pawn_4_t">
+                <a href="https://x.com/pawn_4_t" className="x-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="28" height="28" role="img" aria-labelledby="aas9eqi5owg3mvmue35ksxy426swgjw0" className="octicon"><title id="aas9eqi5owg3mvmue35ksxy426swgjw0">X</title><path fill="currentColor" d="M9.332 6.925 14.544 1h-1.235L8.783 6.145 5.17 1H1l5.466 7.78L1 14.993h1.235l4.78-5.433 3.816 5.433H15L9.332 6.925ZM7.64 8.848l-.554-.775L2.68 1.91h1.897l3.556 4.975.554.775 4.622 6.466h-1.897L7.64 8.848Z"></path></svg>
                 </a>
                 <a href="https://github.com/pawn-4-git" className="github-icon">

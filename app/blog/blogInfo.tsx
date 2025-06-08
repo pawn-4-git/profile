@@ -9,6 +9,14 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: 20250602,
+        title: "Javaのライブラリ「SpringAI」を使ってMCPサーバー作成を試してみた！",
+        date: "2025-06-202",
+        summary: "",
+        thumbnail: "/profile/img/20250526141305.png",
+        url: "https://toranoana-lab.hatenablog.com/entry/2025/06/02/100000"
+    },
+    {
         id: 20250529,
         title: "【実体験】GitHubの隠れた挙動：プルリクエストのマージで他のプルリクエストも「マージ済み」に！",
         date: "2025-05-29",

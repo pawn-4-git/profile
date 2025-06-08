@@ -6,6 +6,8 @@ export type PresentationEvent = {
 };
 
 export const presentationEvents: PresentationEvent[] = [
+    { id: 20250607, title: 'JJUG CCC 2025 Spring', date: '2025-06-07', url: "https://ccc2025spring.java-users.jp/" },
+    { id: 20250606, title: 'サブカル業界Developers 勉強会 Vol.9', date: '2025-06-06', url: "https://subculturedev.connpass.com/event/353140/" },
     { id: 20250530, title: '【エンジニア交流会＠目黒】テテミート #13《参加者全員LT会》', date: '2025-05-30', url: "https://tetemarche.connpass.com/event/348139/" },
     { id: 1, title: 'アニメから得た学びを発表会', date: '2025-04-18', url: "https://engineers-anime.connpass.com/event/340300/" },
     { id: 2, title: '読書シェア会 vol.3', date: '2025-03-26', url: "https://yumemi.connpass.com/event/346319/" },

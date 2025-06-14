@@ -4,10 +4,18 @@ export type Book = {
     imageUrl?: string;
     url: string;
     date?: string;
+    review?: string;
 };
 
 export const books: Book[] = [
-
+    {
+        title: "チームが「まとまるリーダー」と「バラバラのリーダー」の習慣",
+        author: "林健太郎",
+        imageUrl: "https://shop.r10s.jp/rakutenkobo-ebooks/cabinet/9233/2000017789233.jpg",
+        url: "https://hb.afl.rakuten.co.jp/ichiba/158ccf60.679a5af3.158ccf61.f00e8fba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutenkobo-ebooks%2Fd2b5d8b59f6b39ba9ba225bfcc725a76%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        date: "2025-06-08",
+        review: "よく言われている無意識にリーダーがしてしまっている習慣がまとめられている書籍でした。数ヶ月に一度読んで振り返りをするのが良いと思いました"
+    },
     {
         title: "紛争でしたら八田まで（１）",
         author: "田素弘",

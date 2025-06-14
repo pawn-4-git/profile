@@ -81,6 +81,11 @@ export default function Page() {
                       {book.title}
                     </div>
                     <div style={{ color: "#555", fontSize: "0.95rem", textAlign: "left" }}>{book.author}</div>
+                    {book.review && (
+                      <div style={{ fontSize: "0.85rem", color: "#777", marginTop: "0.5rem", textAlign: "left" }}>
+                        {book.review}
+                      </div>
+                    )}
                   </div>
                 </a>
               ))}

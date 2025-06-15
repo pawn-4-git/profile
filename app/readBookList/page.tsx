@@ -1,8 +1,31 @@
-'use client'
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import { books as readBooks, Book } from "../book/readBook";
 import { unreadBooks } from "../book/unReadBook";
+import type { Metadata } from 'next';
+
+export const generateMetadata = (): Metadata => {
+  const defaultImageUrl = '/next.svg'; // デフォルトの画像パス
+  const firstBookWithImage = readBooks.find(book => book.imageUrl);
+  const ogImageUrl = firstBookWithImage ? firstBookWithImage.imageUrl : defaultImageUrl;
+
+  return {
+    title: '既読本一覧',
+    description: 'これまでに読んだ本のリストです。',
+    openGraph: {
+      title: '既読本一覧',
+      description: 'これまでに読んだ本のリストです。',
+      images: [
+        {
+          url: ogImageUrl as string,
+          width: 1200,
+          height: 630,
+          alt: '既読本一覧',
+        },
+      ],
+    },
+  };
+};
 
 export default function Page() {
 

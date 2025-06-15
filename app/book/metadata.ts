@@ -11,14 +11,14 @@ export const generateBookMetadata = (
     const ogImageUrl = firstBookWithImage ? firstBookWithImage.imageUrl : defaultImageUrl;
 
     return {
-        title: title,
-        description: description,
+        title,
+        description,
         openGraph: {
-            title: title,
-            description: description,
+            title,
+            description,
             images: [
                 {
-                    url: ogImageUrl as string,
+                    url: ogImageUrl,
                     width: 1200,
                     height: 630,
                     alt: title,

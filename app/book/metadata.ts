@@ -19,7 +19,7 @@ export const generateBookMetadata = (
             description,
             images: [
                 {
-                    url: ogImageUrl,
+                    url: ogImageUrl as string,
                     width: OG_IMAGE_WIDTH,
                     height: OG_IMAGE_HEIGHT,
                     alt: title,

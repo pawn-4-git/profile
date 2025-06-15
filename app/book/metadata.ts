@@ -9,7 +9,8 @@ export const generateBookMetadata = (
     const defaultImageUrl = '/next.svg';
     const firstBookWithImage = books.find(book => book.imageUrl);
     const ogImageUrl = firstBookWithImage ? firstBookWithImage.imageUrl : defaultImageUrl;
-
+    const OG_IMAGE_WIDTH = 1200;
+    const OG_IMAGE_HEIGHT = 630;
     return {
         title,
         description,
@@ -19,8 +20,8 @@ export const generateBookMetadata = (
             images: [
                 {
                     url: ogImageUrl,
-                    width: 1200,
-                    height: 630,
+                    width: OG_IMAGE_WIDTH,
+                    height: OG_IMAGE_HEIGHT,
                     alt: title,
                 },
             ],

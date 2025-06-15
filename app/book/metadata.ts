@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Book } from './readBook'; // Book型をインポート
+import { Book } from './readBook';
 
 export const generateBookMetadata = (
     books: Book[],
     title: string,
     description: string
 ): Metadata => {
-    const defaultImageUrl = '/next.svg'; // デフォルトの画像パス
+    const defaultImageUrl = '/next.svg';
     const firstBookWithImage = books.find(book => book.imageUrl);
     const ogImageUrl = firstBookWithImage ? firstBookWithImage.imageUrl : defaultImageUrl;
 

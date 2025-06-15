@@ -2,29 +2,10 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import { books as readBooks, Book } from "../book/readBook";
 import { unreadBooks } from "../book/unReadBook";
-import type { Metadata } from 'next';
+import { generateBookMetadata } from "../book/metadata";
 
-export const generateMetadata = (): Metadata => {
-  const defaultImageUrl = '/next.svg'; // デフォルトの画像パス
-  const firstBookWithImage = unreadBooks.find(book => book.imageUrl);
-  const ogImageUrl = firstBookWithImage ? firstBookWithImage.imageUrl : defaultImageUrl;
-
-  return {
-    title: '未読本一覧',
-    description: 'これから読みたい本のリストです。',
-    openGraph: {
-      title: '未読本一覧',
-      description: 'これから読みたい本のリストです。',
-      images: [
-        {
-          url: ogImageUrl as string,
-          width: 1200,
-          height: 630,
-          alt: '未読本一覧',
-        },
-      ],
-    },
-  };
+export const generateMetadata = () => {
+  return generateBookMetadata(unreadBooks, '未読本一覧', 'これから読みたい本のリストです。');
 };
 
 export default function Page() {

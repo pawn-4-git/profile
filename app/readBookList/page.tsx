@@ -1,8 +1,12 @@
-'use client'
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import { books as readBooks, Book } from "../book/readBook";
 import { unreadBooks } from "../book/unReadBook";
+import { generateBookMetadata } from "../book/metadata";
+
+export const generateMetadata = () => {
+  return generateBookMetadata(readBooks, '既読本一覧', 'これまでに読んだ本のリストです。');
+};
 
 export default function Page() {
 

@@ -6,6 +6,7 @@ export type PresentationEvent = {
 };
 
 export const presentationEvents: PresentationEvent[] = [
+    { id: 20250717, title: '渋谷でビール片手にLT会！ ※初心者大歓迎', date: '2025-07-17', url: "https://metaps.connpass.com/event/356976/" },
     { id: 20250607, title: 'JJUG CCC 2025 Spring', date: '2025-06-07', url: "https://ccc2025spring.java-users.jp/" },
     { id: 20250606, title: 'サブカル業界Developers 勉強会 Vol.9', date: '2025-06-06', url: "https://subculturedev.connpass.com/event/353140/" },
     { id: 20250530, title: '【エンジニア交流会＠目黒】テテミート #13《参加者全員LT会》', date: '2025-05-30', url: "https://tetemarche.connpass.com/event/348139/" },

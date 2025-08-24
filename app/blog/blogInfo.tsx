@@ -9,6 +9,14 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: 20250730,
+        title: "【構築メモ】Next.jsをCloudFront+S3でセキュアにホスティング！GitHub ActionsでCI/CDも構築",
+        date: "2025-07-30",
+        summary: "",
+        thumbnail: "/profile/img/fb6fc7aeb2d2cced27f9.jpeg",
+        url: "https://qiita.com/ho-rai/items/fb6fc7aeb2d2cced27f9"
+    },
+    {
         id: 20250602,
         title: "Javaのライブラリ「SpringAI」を使ってMCPサーバー作成を試してみた！",
         date: "2025-06-02",

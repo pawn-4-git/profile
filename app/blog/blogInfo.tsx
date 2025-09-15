@@ -9,6 +9,14 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: 20250830,
+        title: "サーバーレスAPIを安全に！CloudFrontとLambdaとGitHub Actionsで作るセキュアな仕組み",
+        date: "2025-08-30",
+        summary: "",
+        thumbnail: "/profile/img/283700489d23ca623722.jpeg",
+        url: "https://qiita.com/ho-rai/items/283700489d23ca623722"
+    },
+    {
         id: 20250730,
         title: "【構築メモ】Next.jsをCloudFront+S3でセキュアにホスティング！GitHub ActionsでCI/CDも構築",
         date: "2025-07-30",

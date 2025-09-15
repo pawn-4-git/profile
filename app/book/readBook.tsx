@@ -9,6 +9,14 @@ export type Book = {
 
 export const books: Book[] = [
     {
+        title: "一流のマネジャー945人をAI分析してわかった　できるリーダーの基本",
+        author: "越川 慎司",
+        imageUrl: "https://shop.r10s.jp/book/cabinet/2245/9784296002245_1_30.jpg",
+        url: "https://hb.afl.rakuten.co.jp/ichiba/1606396a.af218406.1606396b.fc9e49ea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18275672%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        date: "2025-09-15",
+        review: "普段の行動に対する振り返りとして読んでみるのが良い本でした"
+    },
+    {
         title: "9割の企業がはまってしまう 新規事業開発の落とし穴",
         author: "羽野　仁彦",
         imageUrl: "https://shop.r10s.jp/book/cabinet/8976/9784344948976_1_3.jpg",

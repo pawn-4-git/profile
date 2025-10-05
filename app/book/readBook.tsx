@@ -9,6 +9,14 @@ export type Book = {
 
 export const books: Book[] = [
     {
+        title: "成長以外、全て死",
+        author: "中野 優作",
+        imageUrl: "https://shop.r10s.jp/book/cabinet/4838/9784344044838.jpg",
+        url: "https://hb.afl.rakuten.co.jp/ichiba/1606396a.af218406.1606396b.fc9e49ea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18345507%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        date: "2025-10-06",
+        review: "これまでYoutubeで発信されていた内容とその時考えていたことがまとめられた書籍でした。どんな時もその時々で全力で動いていたことが感じられたのと、手を抜きそうになることが退化だと思わないと生き残れないという危機感を持つべきだと思う書籍でした。"
+    },
+    {
         title: "一流のマネジャー945人をAI分析してわかった　できるリーダーの基本",
         author: "越川 慎司",
         imageUrl: "https://shop.r10s.jp/book/cabinet/2245/9784296002245_1_30.jpg",

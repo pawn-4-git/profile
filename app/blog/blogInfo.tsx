@@ -9,6 +9,22 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: 202501027,
+        title: "AWS Knowledge MCPを試す：公式ナレッジベースAI検索の可能性",
+        date: "2025-10-27",
+        summary: "AWS Knowledge MCPが正式リリースされたので、早速試してみました。本記事では、その概要と、実際に使ってみてわかったこと、特に従来のLLM（大規模言語モデル）検索との比較や、ドキュメント整理の能力についてまとめます。",
+        thumbnail: "/profile/img/qiita20251027.jpeg",
+        url: "https://qiita.com/ho-rai/items/6b56e65cd6bf44d46cd0"
+    },
+    {
+        id: 202500926,
+        title: "【検証】Chrome DevToolsのMCPをGeminiCLIで試す！E2Eテストへの可能性と課題",
+        date: "2025-09-26",
+        summary: "Chrome DevToolsのMCP（Minimal Chrome Platform）が公開されたので、GeminiCLIを使ってその機能を早速試してみました。このMCPを利用すれば、CLI（コマンドラインインターフェース）からChromeを操作でき、E2E（End-to-End）テストなどへの活用ができそうなので触ってみました。",
+        thumbnail: "/profile/img/qiita20250926.jpeg",
+        url: "https://qiita.com/ho-rai/items/97b1141f378c63071268"
+    },
+    {
         id: 20250830,
         title: "サーバーレスAPIを安全に！CloudFrontとLambdaとGitHub Actionsで作るセキュアな仕組み",
         date: "2025-08-30",

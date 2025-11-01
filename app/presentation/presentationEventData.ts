@@ -6,6 +6,7 @@ export type PresentationEvent = {
 };
 
 export const presentationEvents: PresentationEvent[] = [
+    { id: 20251030, title: '【AWS】AWS10分LT会 - vol.7', date: '2025-10-30', url: "https://aws-likers.connpass.com/event/370773/" },
     { id: 20250922, title: '池袋最高！池袋LT会※誰でも歓迎', date: '2025-09-22', url: "https://sysmac.connpass.com/event/366195/" },
     { id: 20250824, title: '仕事に使える実践AI勉強会 #1', date: '2025-08-24', url: "https://connpass.com/event/362510/" },
     { id: 20250717, title: '渋谷でビール片手にLT会！ ※初心者大歓迎', date: '2025-07-17', url: "https://metaps.connpass.com/event/356976/" },

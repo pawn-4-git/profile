@@ -5,6 +5,8 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import LatestUpdates from "./top/LatestUpdates";
 import profileInfo from "./profileInfo";
+import { GoogleAnalytics } from "./GoogleAnalytics"; // GoogleAnalyticsをインポート
+import { Suspense } from 'react'; // Suspenseをインポート
 
 export default function Home() {
   const [blog, setBlog] = useState("Blog");
@@ -29,6 +31,10 @@ export default function Home() {
           <LatestUpdates />
         </div>
       </main>
+      {/* GoogleAnalyticsをSuspenseでラップ */}
+      <Suspense fallback={<div>Loading analytics...</div>}>
+        <GoogleAnalytics />
+      </Suspense>
       <Footer />
     </div>
   );

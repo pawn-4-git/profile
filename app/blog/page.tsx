@@ -5,6 +5,8 @@ import Image from "next/image";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import { blogPosts, BlogPost } from "./blogInfo";
+import { GoogleAnalytics } from "../GoogleAnalytics"; // GoogleAnalyticsをインポート
+import { Suspense } from 'react'; // Suspenseをインポート
 
 export default function Page() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -84,6 +86,10 @@ export default function Page() {
           </button>
         </div>
       </main>
+      {/* GoogleAnalyticsをSuspenseでラップ */}
+      <Suspense fallback={<div>Loading analytics...</div>}>
+        <GoogleAnalytics />
+      </Suspense>
       <Footer />
     </div>
   );

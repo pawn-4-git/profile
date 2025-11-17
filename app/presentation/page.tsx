@@ -2,6 +2,8 @@ import Image from "next/image";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import PresentationEvent from "./PresentationEvent";
+import { GoogleAnalytics } from "../GoogleAnalytics"; // GoogleAnalyticsをインポート
+import { Suspense } from 'react'; // Suspenseをインポート
 
 export default function Page() {
   const sampleEvents = [
@@ -24,6 +26,10 @@ export default function Page() {
       <Header />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <PresentationEvent />
+        {/* GoogleAnalyticsをSuspenseでラップ */}
+        <Suspense fallback={<div>Loading analytics...</div>}>
+          <GoogleAnalytics />
+        </Suspense>
       </main>
       <Footer />
     </div>

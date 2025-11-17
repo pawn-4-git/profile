@@ -3,6 +3,8 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import BookList from "./BookList";
 import UnreadBookList from "./UnreadBookList";
+import { GoogleAnalytics } from "../GoogleAnalytics"; // GoogleAnalyticsをインポート
+import { Suspense } from 'react'; // Suspenseをインポート
 
 import { useState } from "react";
 
@@ -23,6 +25,10 @@ export default function Page() {
           </div>
         </div>
       </main>
+      {/* GoogleAnalyticsをSuspenseでラップ */}
+      <Suspense fallback={<div>Loading analytics...</div>}>
+        <GoogleAnalytics />
+      </Suspense>
       <Footer />
     </div>
   );

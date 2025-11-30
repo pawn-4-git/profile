@@ -9,6 +9,14 @@ export type Book = {
 
 export const books: Book[] = [
     {
+        title: "増補改訂版　フィードバック入門　部下が成果を出すための最も効果が高い育成の技術",
+        author: "中原 淳",
+        imageUrl: "https://shop.r10s.jp/book/cabinet/9729/9784569859729_1_2.jpg",
+        url: "https://hb.afl.rakuten.co.jp/ichiba/1606396a.af218406.1606396b.fc9e49ea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18266559%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        date: "2025-12-01",
+        review: "フィードバックの基本が読める書籍でした。基本なのでこれを読んで全てが解決ではないですが、自分の行なっていることでマイナスになっている部分がないかの確認したい時に良いと思います。"
+    },
+    {
         title: "成長以外、全て死",
         author: "中野 優作",
         imageUrl: "https://shop.r10s.jp/book/cabinet/4838/9784344044838.jpg",

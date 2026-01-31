@@ -9,6 +9,14 @@ export type Book = {
 
 export const books: Book[] = [
     {
+        title: "The Giver　人を動かす方程式",
+        author: "澤円",
+        imageUrl: "https://shop.r10s.jp/book/cabinet/0597/9784163920597_1_4.jpg",
+        url: "https://hb.afl.rakuten.co.jp/ichiba/1606396a.af218406.1606396b.fc9e49ea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18478622%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        date: "2026-1-31",
+        review: "AI時代は、技術の時代であると同時に、より「人間らしさ」が試される時代です。今の自分の立ち振る舞いを見直したいと感じている方にとって、本書は全体を通して読んでみる価値が十分にある一冊だと思います。"
+    },
+    {
         title: "増補改訂版　フィードバック入門　部下が成果を出すための最も効果が高い育成の技術",
         author: "中原 淳",
         imageUrl: "https://shop.r10s.jp/book/cabinet/9729/9784569859729_1_2.jpg",
